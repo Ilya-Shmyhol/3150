@@ -1,0 +1,70 @@
+Please Enter the 1st coordinate of the 1st circle
+x1= 3.0
+Please Enter the 2nd coordinate of the 1st circle
+y2= 4.0
+Please Enter the radius of the 1st circle
+r1= 5.0
+Please Enter the 1st coordinate of the 2nd circle
+x2= 14.0
+Please Enter the 2nd coordinate of the 2nd circle
+y2= 18.0
+Please Enter the radius of the 2nd circle
+r2= 8.0
+The distance is: 17.804493814764857
+These circles do not touch
+Please Enter the 1st coordinate of the 1st circle
+x1= 2.0
+Please Enter the 2nd coordinate of the 1st circle
+y2= 3.0
+Please Enter the radius of the 1st circle
+r1= 12.0
+Please Enter the 1st coordinate of the 2nd circle
+x2= 15.0
+Please Enter the 2nd coordinate of the 2nd circle
+y2= 28.0
+Please Enter the radius of the 2nd circle
+r2= 10.0
+The distance is: 28.178005607210743
+These circles do not touch
+Please Enter the 1st coordinate of the 1st circle
+x1= -10.0
+Please Enter the 2nd coordinate of the 1st circle
+y2= 8.0
+Please Enter the radius of the 1st circle
+r1= 30.0
+Please Enter the 1st coordinate of the 2nd circle
+x2= 14.0
+Please Enter the 2nd coordinate of the 2nd circle
+y2= -24.0
+Please Enter the radius of the 2nd circle
+r2= 10.0
+The distance is: 40.0
+These circles do touch
+Please Enter the 1st coordinate of the 1st circle
+x1= -10.0
+Please Enter the 2nd coordinate of the 1st circle
+y2= 8.0
+Please Enter the radius of the 1st circle
+r1= 30.0
+Please Enter the 1st coordinate of the 2nd circle
+x2= 14.0
+Please Enter the 2nd coordinate of the 2nd circle
+y2= -24.0
+Please Enter the radius of the 2nd circle
+r2= 10.0
+The distance is: 40.0
+These circles do touch
+Please Enter the 1st coordinate of the 1st circle
+x1= 0.0
+Please Enter the 2nd coordinate of the 1st circle
+y2= 0.0
+Please Enter the radius of the 1st circle
+r1= 10.0
+Please Enter the 1st coordinate of the 2nd circle
+x2= 1.0
+Please Enter the 2nd coordinate of the 2nd circle
+y2= 1.0
+Please Enter the radius of the 2nd circle
+r2= 3.0
+The distance is: 1.4142135623730951
+The 2nd circle is inside the 1st circle

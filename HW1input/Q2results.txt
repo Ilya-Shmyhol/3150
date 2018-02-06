@@ -1,0 +1,16 @@
+Please enter the raduis 
+Raduis entered: 4.000 
+The area of your circle is: 50.265 
+Please enter the radius 
+Raduis entered: 3.000 
+The area of your circle is: 28.274 
+Please enter the radius 
+Raduis entered: 2.000 
+The area of your circle is: 12.566 
+Please enter the radius 
+Raduis entered: 1.000 
+The area of your circle is: 3.142 
+Please enter the radius 
+Raduis entered: 4321.000 
+The area of your circle is: 58656805.240 
+Please enter the radius 

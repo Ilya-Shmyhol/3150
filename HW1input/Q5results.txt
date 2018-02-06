@@ -1,0 +1,15 @@
+Number 0 coordinates are X= 4 and Y= 10  
+Number 1 coordinates are X= 0 and Y= 0  
+Number 2 coordinates are X= 8 and Y= 0  
+This is a real triangle 
+
+Number 0 coordinates are X= -12 and Y= 0  
+Number 1 coordinates are X= 32 and Y= 0  
+Number 2 coordinates are X= 12 and Y= 0  
+This is NOT a real triangle 
+
+Number 0 coordinates are X= -3 and Y= 3  
+Number 1 coordinates are X= 2 and Y= 4  
+Number 2 coordinates are X= 3 and Y= -1  
+This is a real triangle 
+
