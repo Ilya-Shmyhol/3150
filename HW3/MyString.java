@@ -4,20 +4,22 @@ public class MyString {
 	
 	public static void main(String[] args) {//Driver Class
 		char [] a= new char []{'G','o','d',' ','S','a','v','e'};
-		char [] b= new char []{'G','o','d',' ','d','b'};
+		char [] b= new char []{'G','o','d',' ','S','a',' ','1'};
 		//char[] a = trs.toCharArray();
 		MyString ilya = new MyString(a);
 		MyString ben = new MyString(b);
+		System.out.println("Ilya: "+new String(a));
+		System.out.println("Ben: "+new String(b));
 		System.out.println("CharAt(1): "+ilya.CharAt(1));
 		System.out.println("length(): "+ilya.length());
 		System.out.println("substring(1,5): "+ilya.substring(1,5));
 		System.out.println("toLowerCase(): "+ilya.toLowerCase());
 		System.out.println("toUppercase(): "+ilya.toUpperCase());
-		System.out.println("valueOf(2): "+ilya.valueOf(2));
 		String i= ilya.toString();
-		System.out.println("toString: "+i);
-		System.out.println("getMyString: "+ilya.getMyString());
 		System.out.println("compareTo(ben): "+ilya.compareTo(ben));
+		System.out.println("getMyString: "+ilya.getMyString());
+		System.out.println("toString: "+i);
+		System.out.println("valueOf(2): "+ilya.valueOf(2));
 		
 
 	}
