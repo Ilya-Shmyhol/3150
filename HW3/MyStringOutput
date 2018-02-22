@@ -1,0 +1,11 @@
+Ilya: God Save
+Ben: God Sa 1
+CharAt(1): o
+length(): 8
+substring(1,5): od S
+toLowerCase(): god save
+toUppercase(): GOD SAVE
+compareTo(ben): -86
+getMyString: God Save
+toString: God Save
+valueOf(2): d
