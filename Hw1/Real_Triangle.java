@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Q5 {
+public class Real_Triangle {
 	public static void main(String args[]){
 		
 		Scanner reader= new Scanner(System.in);
