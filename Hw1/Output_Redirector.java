@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Q4 {
+public class Output_Redirector {
 	public static void main(String args []){
 
 		Scanner reader= new Scanner(System.in);
