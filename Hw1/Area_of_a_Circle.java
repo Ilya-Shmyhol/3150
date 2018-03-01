@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 /*
 */
-public class Q2{
+public class Area_of_a_Circle{
 	public static void main(String[] args){
 		
 		double p=Math.PI;
