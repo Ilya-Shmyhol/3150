@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Q6 {
+public class Circle_Position_Finder {
 	public static void main (String args[]){
 		
 		double x1,y1,x2,y2,r1,r2, dist; //x1 y1 r1 belong to circle one x2 y2 r2 belong to circle 
