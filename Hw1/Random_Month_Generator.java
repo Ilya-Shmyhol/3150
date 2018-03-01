@@ -1,6 +1,6 @@
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Q3  {
+public class Random_Month_Generator  {
 		public static void main(String args[]){
 			String month;
 			for(int z=0; z<12; z++){
