@@ -1,0 +1,34 @@
+import java.util.concurrent.ThreadLocalRandom;
+public class circle_dots {
+	public static void main(String...args){
+		long before = System.currentTimeMillis();
+		int r=8;
+		long incircle=0,insquare=0;
+		double areaS=r*2;
+		double areaC=Math.PI*Math.pow(r, 2); 
+		double areaCQuad=areaC/4;
+		
+		for(long i=0;i<3999999999L;i++){
+			int randy=ThreadLocalRandom.current().nextInt(0,r);
+			int randx=ThreadLocalRandom.current().nextInt(0,r);
+			
+			if(r>=Math.pow(Math.pow(randy,2)+Math.pow(randx, 2), .5))//falls between 
+					incircle +=1;
+			else insquare+=1;
+		}
+	System.out.printf("%d dots were both in the sqaure and in the circle\n ",incircle);
+	System.out.printf("%d dots were in the sqaure but not in the circle\n ",insquare);
+	System.out.println(System.currentTimeMillis()-before);
+	}
+}
+/* org code 4 mil is 61669 with 1 thread
+ * time for 400 mil is 16338 with 7 threads 
+ * time for 400 mil is 13792,14013,14202 with 6 threads 
+ * time for 400 mil is 14469,14343 with 5 threads 
+ * time for 400 mil is 14243,13778,13809 with 4 threads 
+ * time for 400 mil is 18009 with 3 threads 
+ * time for 400 bil is 14243,13778,13809 with 4 threads 
+ * * time for 4 bil is 160549 with 6 threads
+ * time for 4 bil is  138041 with 4 threads
+ * time for 4 bil is   with 4 threads and main
+ */ 
