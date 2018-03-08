@@ -1,0 +1,82 @@
+import java.util.concurrent.ThreadLocalRandom;
+
+public class CircleDotThread implements Runnable {
+
+private static long fincircle=0,finsquare=0,fcount=0,ftcount=0;
+private static int r=8;
+
+    public void run() {
+    	 long incircle=0,insquare=0, count=0;
+    	
+            for(long i1=0;i1<(4000000000L/(ftcount));i1++){
+
+            	int randy=ThreadLocalRandom.current().nextInt(0,r);//(int)(Math.random()*(r+1));
+                int randx=ThreadLocalRandom.current().nextInt(0,r);//(int)(Math.random()*(r+1));
+                if(r>=Math.pow(Math.pow(randy,2)+Math.pow(randx, 2), .5))//falls between 
+                   incircle +=1;
+                   else insquare+=1;  
+                count++;
+            }
+            System.out.println("Child Thread "+count);
+
+            try {
+                Thread.sleep(0);
+            } catch (InterruptedException ie) {
+                System.out.println("Child thread interrupted! " + ie);
+            }
+        
+            finsquare+=insquare;
+            fincircle+=incircle;
+            fcount+=count;
+        System.out.println("Child thread finished!");
+        
+    }
+
+    public static void main(String[] args) {
+    	long before = System.currentTimeMillis();
+        Thread t = new Thread(new DemoThread ());
+        Thread t1 = new Thread(new DemoThread ());
+        Thread t2 = new Thread(new DemoThread ());
+        Thread t3 = new Thread(new DemoThread ());
+        //Thread t4 = new Thread(new DemoThread ());
+        //Thread t5 = new Thread(new DemoThread ());
+        //Thread t6 = new Thread(new DemoThread ());
+        t.start();
+        ftcount++;
+        t1.start();
+        ftcount++;
+        t2.start();
+        ftcount++;
+        t3.start();
+        ftcount++;
+      //  t4.start();
+       // ftcount++;
+      // t5.start();
+       // ftcount++;
+  
+        
+
+
+        System.out.println("Main !");
+            try {
+               
+                t.join(); 
+                t1.join();
+                t2.join();
+                t3.join();
+               // t4.join();
+               // t5.join();;
+                
+            } catch (InterruptedException ie) {
+                System.out.println("Child thread interrupted! " + ie);
+            }
+        
+       
+        //System.out.println("Main thread finished!");
+
+    	System.out.printf("%d dots were both in the sqaure and in the circle\n ",fincircle);
+    	System.out.printf("%d dots were in the sqaure but not in the circle\n ",finsquare);
+    	System.out.println("time is "+(System.currentTimeMillis()-before)+" count is: "+fcount);
+    	System.out.println("PI is: "+(fincircle/1000000000));
+    }
+}
